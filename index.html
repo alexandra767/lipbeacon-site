@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LipBeacon — Personal cold-sore tracker for iPhone</title>
+<meta name="description" content="LipBeacon is a private iPhone app for tracking cold-sore outbreaks, learning your personal triggers, and watching your healing progress. Data stays on your device.">
+<meta property="og:title" content="LipBeacon — Personal cold-sore tracker">
+<meta property="og:description" content="Learn your triggers. Watch your progress. Everything stays on your phone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lipbeacon.com">
+<link rel="icon" type="image/png" href="/icon.png">
+<style>
+:root{
+  --pink:#EC4899;
+  --purple:#7C3AED;
+  --ink:#0F0F18;
+  --soft:#1B1B2A;
+  --line:rgba(255,255,255,0.08);
+  --muted:rgba(255,255,255,0.65);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--ink);color:#fff;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:#fff;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+.logo .dot{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--pink),var(--purple));box-shadow:0 6px 18px rgba(236,72,153,.4)}
+nav a+a{margin-left:20px;color:var(--muted);font-size:14px}
+
+.hero{padding:90px 0 60px;text-align:center}
+.hero h1{font-size:clamp(38px,6vw,72px);line-height:1.05;font-weight:800;letter-spacing:-.02em;background:linear-gradient(135deg,#fff,#FDE7F0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{margin-top:24px;font-size:clamp(17px,2vw,22px);color:var(--muted);max-width:680px;margin-left:auto;margin-right:auto}
+.cta{margin-top:36px;display:inline-flex;align-items:center;gap:10px;padding:14px 24px;background:linear-gradient(135deg,var(--pink),var(--purple));border-radius:14px;font-weight:700;font-size:16px;box-shadow:0 10px 30px rgba(236,72,153,.35)}
+.cta:hover{transform:translateY(-1px);transition:transform .15s ease}
+.smallnote{margin-top:14px;color:var(--muted);font-size:13px}
+
+.grid{margin-top:80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-size:18px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:14.5px}
+.card .ico{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,rgba(236,72,153,.25),rgba(124,58,237,.25));display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:22px}
+
+section.privacy{margin-top:90px;text-align:center}
+section.privacy h2{font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.01em}
+section.privacy p{margin-top:16px;color:var(--muted);max-width:600px;margin-left:auto;margin-right:auto}
+
+footer{margin-top:120px;padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+footer a{color:var(--muted)}
+footer a:hover{color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="/"><span class="dot"></span> LipBeacon</a>
+    <div>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/support.html">Support</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Know your<br>cold sore triggers.</h1>
+    <p class="sub">LipBeacon is a private iPhone tracker that helps you log outbreaks, watch healing progress, and learn which of your triggers — sun, stress, sleep, food — actually matter.</p>
+    <a class="cta" href="#" id="storelink">Coming soon to the App Store →</a>
+    <div class="smallnote">Free to start • $4.99/mo or $29.99/yr for Pro</div>
+  </header>
+
+  <div class="grid">
+    <div class="card"><div class="ico">🔔</div><h3>Log at the first tingle</h3><p>Tap once when you feel it coming on. Early logging is what makes the trigger correlations actually work.</p></div>
+    <div class="card"><div class="ico">📊</div><h3>Real trigger patterns</h3><p>After a few outbreaks, see your personal correlation map. "Stress preceded 80% of yours." That's the whole insight.</p></div>
+    <div class="card"><div class="ico">📸</div><h3>Healing photo timeline</h3><p>One photo a day, side-by-side. Reassures you that the outbreak IS resolving — even when it feels stuck.</p></div>
+    <div class="card"><div class="ico">🔒</div><h3>Stays on your phone</h3><p>No cloud sync, no account, no server. Photos and logs live in your iPhone's encrypted storage. Face ID gate optional.</p></div>
+    <div class="card"><div class="ico">💊</div><h3>Medication log</h3><p>Track topical antivirals, lysine, prescription antivirals, and Lip SPF. Cross-reference what works for you.</p></div>
+    <div class="card"><div class="ico">📄</div><h3>Doctor-ready PDF</h3><p>(Coming soon in Pro) Export a clean history of frequency, triggers, and treatments for your next derm or GP visit.</p></div>
+  </div>
+
+  <section class="privacy">
+    <h2>Built for privacy first.</h2>
+    <p>Cold sores are personal. LipBeacon doesn't have a backend — your data never leaves your device. Optional Face ID lock keeps the app hidden even if your phone is unlocked.</p>
+  </section>
+
+  <footer>
+    <div>© 2026 LipBeacon. Not a medical device. Not a substitute for a licensed clinician.</div>
+    <div>
+      <a href="/privacy.html">Privacy</a> &nbsp;·&nbsp;
+      <a href="/support.html">Support</a> &nbsp;·&nbsp;
+      <a href="mailto:support@lipbeacon.com">Email</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
